@@ -1,5 +1,6 @@
 const taskInput = document.querySelector(".container input");
 const taskSection = document.querySelector(".tasks");
+// const taskscroll = document.querySelector
 taskInput.addEventListener("keyup",(e)=>{
     if(e.key=='Enter') {createTask();}
 });
@@ -19,21 +20,13 @@ function createTask(){
         <div class="binicon"> <i class="fa-solid fa-trash"></i> </div>
     </div>`;
 
-    //     `<div class="task">
-    //     <label id="taskname">
-    //     <input onclick="updateTask(this)" type="checkbox" class="check-task">
-    //     <p> ${taskInput.value} </p>
-    //     </label>
-    //     <div class="delete">
-    //    <p>-</p></div></div>`;
         current_tasks = document.querySelectorAll(".binicon");
         for(let i=0;i<current_tasks.length;i++){
             current_tasks[i].onclick=function(){
                 this.parentNode.remove();
             }
         }
-        taskInput.value="Add task";
-        taskSection.offsetHeight >=300 ? taskSection.classList.add("overflow"):taskSection.classList.remove("overflow");
+        taskInput.value = "Add task";
     }
 }
 function updateTask(task){

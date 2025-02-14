@@ -66,6 +66,15 @@ body {
     height: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
+    min-height: 250px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    overflow-y: scroll;
+}
+
+* {
+    scrollbar-color: #0F62FE #BAE6FF; /* thumb color and track color */
+    scroll-behavior: smooth;
 }
 
 .taskadd {
@@ -75,8 +84,6 @@ body {
     height: 50px;
     padding: 10px;
     justify-content: space-between;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
     
 }
 
