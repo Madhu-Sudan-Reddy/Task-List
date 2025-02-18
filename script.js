@@ -15,7 +15,7 @@ function createTask(){
         alert("Enter the valied Task name and try again ");  
     }else{
         taskSection.innerHTML += `<div class="taskadd">
-        <input onclick="updateTask(this)" type="checkbox" class="completedtask">
+        <input onclick="updateTask(this)" type="checkbox" >
         <span> <p>${taskInput.value}</p></span>
         <div class="binicon"> <i class="fa-solid fa-trash"></i> </div>
     </div>`;
